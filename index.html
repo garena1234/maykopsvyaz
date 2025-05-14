@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <style>
+.icon-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px auto;
+            width: 50%;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaffea;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 60px auto 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .welcome {
+            font-size: 24px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+        @keyframes scrollText {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        .welcome span {
+            display: inline-block;
+            animation: scrollText 5s linear infinite;
+        }
+        .menu {
+            background: #a8d5a8;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .sidebar {
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            width: 80px;
+        }
+        .sidebar.left { left: -100px; }
+        .sidebar.right { right: -100px; }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #c4e7c4;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        .footer {
+            margin-top: 20px;
+            background: #a8d5a8;
+            padding: 10px;
+        }
+body {
+    background-image: url('adigeia.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.welcome-container {
+    max-width: 800px;
+    margin: 50px auto; /* Центрируем блок */
+    text-align: center; /* Центрируем текст */
+    background: rgba(255, 255, 255, 0.8); /* Лёгкий фон для читаемости */
+    padding: 20px;
+    border-radius: 10px; /* Скруглённые углы */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+.welcome-container h1 {
+    font-size: 28px;
+    color: #2d572c; /* Цвет заголовка, в тон светло-зелёной темы */
+    margin-bottom: 15px;
+}
+
+.welcome-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.welcome-container p:last-child {
+    font-weight: bold;
+    color: #1e4620;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="welcome">
+            <span>Добро пожаловать</span>
+        </div>
+
+        <div class="menu">
+            <a href="guide.html">Руководство</a>
+            <a href="documents.html">Документы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="news.html">Новости</a>
+        </div>
+
+        <div class="sidebar left">
+            <a href="icon1.html">О нас</a>       
+            <a href="icon2.html">Продуция</a>
+        </div>
+
+        <div class="sidebar right">
+            <a href="icon3.html">Офис</a>
+            <a href="icon4.html">Клиенты</a>
+        </div>
+
+        <div class="content">
+            
+            <p><div class="welcome-container">
+    <h1>Добро пожаловать в АО «МайкопПромСвязь»!</h1>
+    <p>Наша компания начала свою историю в 1998 году с небольшой мастерской по ремонту телекоммуникационного оборудования. Тогда всего несколько энтузиастов объединились, чтобы помочь местным предприятиям поддерживать связь в условиях стремительного технологического роста.</p>
+    <p>С каждым годом мы расширяли горизонты, осваивали новые технологии и совершенствовали свои решения. Уже к 2005 году «МайкопПромСвязь» стала ключевым игроком на региональном рынке связи, предлагая передовые системы связи для бизнеса и производства.</p>
+    <p>Сегодня мы — это сплочённая команда специалистов, которые разрабатывают и внедряют инновационные решения в сфере связи и автоматизации. Надёжность, качество и современные технологии — вот что лежит в основе нашей работы.</p>
+    <p><strong>Спасибо, что выбрали нас!</strong></p>
+</div></p>
+
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Все права защищены</p>
+        </div>
+<iframe src="footer.html" id="footer-frame"></iframe>
+
+<style>
+    #footer-frame {
+        width: 100%;
+        border: none;
+        height: 120px; /* Подстрой высоту под контент */
+    }
+</style>
+    </div>
+
+</body>
+</html>
