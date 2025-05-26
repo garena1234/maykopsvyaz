@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaffea;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 60px auto 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        }
+        .menu {
+            background: #a8d5a8;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .map-container {
+            width: 60%;
+            height: 250px;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            background: #a8d5a8;
+            padding: 10px;
+        }
+body {
+    background-image: url('adigeia.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <a href="index.html">На главную</a>
+            <a href="icon1.html">О нас</a>
+            <a href="icon2.html">Продуция</a>
+            <a href="icon4.html">Клиенты</a>
+        </div>
+
+        <div class="content">
+            <h1>Расположение здания</h1>
+            <p>На карте ниже можно посмотреть, где находится здание.</p>
+            <div id="map" class="map-container"></div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Все права защищены</p>
+        </div>
+    </div>
+
+    <script>
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [44.609379, 40.107154], 
+                zoom: 15
+            });
+
+            var myPlacemark = new ymaps.Placemark([44.609379, 40.107154], {
+                hintContent: 'Наше здание',
+                balloonContent: 'Здесь находится наше здание'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+<iframe src="footer.html" id="footer-frame"></iframe>
+
+<style>
+    #footer-frame {
+        width: 150+
+        border: none;
+        height: 100x; /* Подстрой высоту под контент */
+}
+</style>
+</body>
+</html>

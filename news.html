@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="news" content="width=device-width, initial-scale=1.0">
+    <title>Документы</title>
+    <style>
+        /* Стили для карусели */
+        .carousel {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 1s ease;
+            animation: slide 12s infinite;
+        }
+
+        .carousel img {
+            width: 33.33%; /* Три изображения в одном экране */
+            height: auto;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(0); }
+            50% { transform: translateX(-100%); }
+            83% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #eaffea;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 60px auto 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu {
+            background: #a8d5a8;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            background: #a8d5a8;
+            padding: 10px;
+        }
+body {
+    background-image: url('adigeia.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <a href="index.html">На главную</a>
+            <a href="guide.html">Руководство</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="documents.html">Документы</a>
+        </div>
+
+        <div class="content">
+            <h1>Новости</h1>
+             <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+    <div class="news">
+        <!-- Новость о ремонте здания -->
+        <div class="news-item">
+            <h2>Ремонт здания завершён</h2>
+            <p><strong>Дата:</strong> 15 марта 2025 г.</p>
+            <p>АО "Майкопромсвязь" успешно завершило капитальный ремонт здания. Были обновлены фасад, кровля и коммуникации. Теперь офисы оборудованы современными системами вентиляции и кондиционирования. Мы благодарим сотрудников и подрядчиков за успешное завершение проекта!</p>
+        </div>
+
+        <!-- Новость о новых сотрудниках -->
+        <div class="news-item">
+            <h2>Приветствуем новых сотрудников</h2>
+            <p><strong>Дата:</strong> 5 марта 2025 г.</p>
+            <p>Мы рады сообщить о пополнении команды АО "Майкопромсвязь"! К нам присоединились: инженер-техник Иван Петров и специалист по связям с общественностью Анна Смирнова. Желаем новым коллегам успехов и продуктивной работы!</p>
+        </div>
+
+        <!-- Новость о вакансиях -->
+        <div class="news-item">
+            <h2>Открытые вакансии</h2>
+            <p><strong>Дата:</strong> 1 марта 2025 г.</p>
+            <p>В связи с расширением штата компания АО "Майкопромсвязь" открывает набор на следующие вакансии:</p>
+            <ul>
+                <li><strong>Инженер связи</strong> — требуется опыт работы от 3 лет, знание современных телекоммуникационных систем.</li>
+                <li><strong>Специалист технической поддержки</strong> — навыки консультирования клиентов и оперативного решения проблем.</li>
+                <li><strong>Бухгалтер</strong> — опыт работы с финансовой документацией, знание 1С приветствуется.</li>
+            </ul>
+            <p>Для получения дополнительной информации и подачи заявки звоните по телефону +8 (8772) 52-36-63 или пишите на email hr@maikopromsvyaz.ru.</p>
+        </div>
+    <!-- Карусель с изображениями -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="C:\Users\Майя\Desktop\сайт мол\фото1.jpg" alt="Фото 1">
+                <img src="C:\Users\Майя\Desktop\сайт мол\фото2.jpg" alt="Фото 2">
+                <img src="C:\Users\Майя\Desktop\сайт мол\фото3.jpg" alt="Фото 3">
+                <img src="C:\Users\Майя\Desktop\сайт мол\фото4.jpg" alt="Фото 4">
+                <img src="C:\Users\Майя\Desktop\сайт мол\фото5.jpg" alt="Фото 5">
+                <img src="C:\Users\Майя\Desktop\сайт мол\фото6.jpg" alt="Фото 6">
+    </div>
+
+        <div class="footer">
+            <p>© 2025 Все права защищены</p>
+        </div>
+    </div>
+<iframe src="footer.html" id="footer-frame"></iframe>
+
+<style>
+    #footer-frame {
+        width: 100%;
+        border: none;
+        height: 120px; /* Подстрой высоту под контент */
+    }
+</style>
+</body>
+</html>

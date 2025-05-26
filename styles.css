@@ -1,0 +1,28 @@
+/* Стили для футера */
+footer {
+    background-color: white; /* Белый фон */
+    color: #333; /* Темный цвет текста для контраста */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Ширина футера на всю страницу */
+    margin: 0 auto; /* Центрируем футер по центру */
+    box-sizing: border-box; /* Чтобы паддинги не выходили за пределы ширины */
+}
+
+/* Оформление ссылок футера */
+footer a {
+    color: #2d572c; /* Зеленый цвет ссылок */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px; /* Отступы между ссылками */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Параграф (права защищены) */
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
